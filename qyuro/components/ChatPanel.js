@@ -38,7 +38,7 @@ export default function ChatPanel() {
           Hey Qyuro
         </p>
         <h1 className="mt-4 text-2xl font-semibold text-white sm:text-3xl">
-          What's on your mind?
+          What&apos;s on your mind?
         </h1>
         <p className="mt-4 max-w-xl text-sm text-white/60 sm:text-base">
           Ask, explore, and refine ideas with a calm, cinematic workspace built
