@@ -1,11 +1,6 @@
 import Link from "next/link";
 import { ArrowUp, Plus, Sparkles } from "lucide-react";
-
-const suggestions = [
-  "Summarize today’s workspace updates.",
-  "Draft a roadmap for the next release.",
-  "Give me a crisp product pitch.",
-];
+import { chatSuggestions } from "@/data/chatSuggestions";
 
 export default function ChatPanel() {
   return (
@@ -38,14 +33,14 @@ export default function ChatPanel() {
           Hey Qyuro
         </p>
         <h1 className="mt-4 text-2xl font-semibold text-white sm:text-3xl">
-          What’s on your mind?
+          What&apos;s on your mind?
         </h1>
         <p className="mt-4 max-w-xl text-sm text-white/60 sm:text-base">
           Ask, explore, and refine ideas with a calm, cinematic workspace built
           for deep thinking.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          {suggestions.map((suggestion) => (
+          {chatSuggestions.map((suggestion) => (
             <button
               key={suggestion}
               type="button"
@@ -68,7 +63,7 @@ export default function ChatPanel() {
           </button>
           <input
             type="text"
-            placeholder="Hey Qyuro, What’s up?"
+            placeholder="Hey Qyuro, What's up?"
             className="flex-1 bg-transparent text-sm text-white placeholder:text-white/40 focus:outline-none"
           />
           <button
