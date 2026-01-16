@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import BackgroundVideo from "@/components/BackgroundVideo";
+import BackgroundVideo from "@/components/layout/BackgroundVideo";
 import "./globals.css";
 
 const geistSans = Geist({

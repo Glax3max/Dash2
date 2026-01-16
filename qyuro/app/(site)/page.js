@@ -1,7 +1,7 @@
-import ChatPanel from "@/components/ChatPanel";
-import ChatSidebar from "@/components/ChatSidebar";
-import LeftNav from "@/components/LeftNav";
-import MobileNav from "@/components/MobileNav";
+import ChatPanel from "@/components/chat/ChatPanel";
+import ChatSidebar from "@/components/chat/ChatSidebar";
+import LeftNav from "@/components/navigation/LeftNav";
+import MobileNav from "@/components/navigation/MobileNav";
 
 export default function Home() {
   return (

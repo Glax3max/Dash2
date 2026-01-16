@@ -1,11 +1,6 @@
 import Link from "next/link";
 import { ArrowUp, Plus, Sparkles } from "lucide-react";
-
-const suggestions = [
-  "Summarize today's workspace updates.",
-  "Draft a roadmap for the next release.",
-  "Give me a crisp product pitch.",
-];
+import { chatSuggestions } from "@/data/chatSuggestions";
 
 export default function ChatPanel() {
   return (
@@ -45,7 +40,7 @@ export default function ChatPanel() {
           for deep thinking.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          {suggestions.map((suggestion) => (
+          {chatSuggestions.map((suggestion) => (
             <button
               key={suggestion}
               type="button"
